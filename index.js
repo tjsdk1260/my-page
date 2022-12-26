@@ -5,7 +5,7 @@ const menu = document.querySelectorAll('.menu-item'),
     aboutTop = contents[1].offsetTop,
     portfolioTop = contents[2].offsetTop,
     contactTop = contents[3].offsetTop;
-console.log(menu,contents[0],contents[1],contents[2],contents[3]);
+
 menu[0].addEventListener('click',()=>{
     window.scroll({
         top:homeTop,
@@ -33,3 +33,9 @@ menu[3].addEventListener('click',()=>{
         behavior:'smooth'
     })
 });
+
+for(let i=0; i<menu.length;i++){
+    menu[i].addEventListener('click',()=>{
+       
+    });
+};
