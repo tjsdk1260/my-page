@@ -34,8 +34,19 @@ menu[3].addEventListener('click',()=>{
     })
 });
 
-for(let i=0; i<menu.length;i++){
-    menu[i].addEventListener('click',()=>{
-       
-    });
-};
+
+//about 스크롤 이벤트
+
+let windowHeight = window.innerHeight;//윈도우 높이
+let aboutTop2 = document.querySelector('.about').offsetTop;//about top 값
+let items = document.querySelector('.about-wrap');//애니메이션 대상
+
+
+window.addEventListener('scroll',function(){
+    let value = window.scrollY; //스크롤 값
+    let absoluteAbout = value + aboutTop2; //about의 절대좌표 값
+    console.log(absoluteAbout,windowHeight);
+    if(absoluteAbout - windowHeight > 0){
+        items.style.animation = 'opacity 2s ease-in-out';
+    }
+});
