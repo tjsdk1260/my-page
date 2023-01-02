@@ -5,6 +5,7 @@ html,body{
     -moz-box-sizing: border-box;
     -moz-box-sizing: border-box;
     font-family: 'Varela Round', 'Nanum Gothic Coding', sans-serif;
+    overflow-x: hidden;
 }
 @font-face {
     font-family: 'Nanum';
@@ -12,6 +13,7 @@ html,body{
     unicode-range:U+AC00-D7A3;
 }
 li{list-style: none;}
+a{text-decoration: none;}
 header{
     width: 40%;
     position: fixed;
@@ -188,7 +190,6 @@ section:last-child{
     width: 1000px;
     display: flex;
     align-items: center;
-    /* animation: opacity 2s ease-in-out; */
 }
 .profile{
     width: 300px;
@@ -215,7 +216,7 @@ section:last-child{
     position: absolute;
     bottom: 23%;
     left: 32%;
-    background-image: linear-gradient(225deg,#abc9ff 20%,#c539b4,#fff980);
+    background-image: linear-gradient(225deg,#bdd3fd 20%,#c539b4,#fcf8b2);
     filter:blur(60px);
     z-index: -20;
 }
@@ -227,7 +228,7 @@ section:last-child{
     top: 50%;
     transform: translateY(-50%);
     right: -200px;
-    background-color: #abc9ff;
+    background-color: #bdd3fd;
     filter: blur(100px);
 }
 .profile>img{
@@ -269,12 +270,64 @@ section:last-child{
     width: 100vw;
     height: auto;}
 .portfolio>article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+}
+.pc{
+    width: 100vw;
+    display: flex;
+    justify-content: center;}
+.pc>div{
+    flex: 1;
+}
+.pc>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pc>div:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 430px;
+    background-color: rgb(214, 214, 214);
+}
+.site-pc-page{display: flex;
+    justify-content: center;}
+.site-pc-page>img{width: 400px;}
+.national .site-pc-page>img{
+    width: 800px;
+}
+.site-circle{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    background-color:#f94892 ;
+    filter: blur(150px);
+}
+.nat-circle{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    background-color:#bdd3fd ;
+    filter: blur(150px);
 }
 .pc-image{width: 850px;}
 .pc-image>img{width: 100%;}
+
 .mobile-image{width: 600px;}
 .mobile-image>img{width: 100%;}
+
+
 .contact{position: relative;}
 .contact-circle{
     width: 300px;
