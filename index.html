@@ -3,240 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=1280">
-    <title>김선아 웹 포트폴리오</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/66c9b6e88e.js"crossorigin="anonymous"></script>
+    <title>김선아 포트폴리오</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <nav class="gnb">
-                <ul class="menu-list">
-                    <li class="menu-item">home</li>
-                    <li class="menu-item">about</li>
-                    <li class="menu-item">portfolio</li>
-                    <li class="menu-item">contact</li>
-                </ul>
+            <nav class="tabs">
+                <input type="radio" id="radio-1" name="tabs" checked />
+                <label class="tab" for="radio-1">home</label>
+                <input type="radio" id="radio-2" name="tabs" />
+                <label class="tab" for="radio-2">about</label>
+                <input type="radio" id="radio-3" name="tabs" />
+                <label class="tab" for="radio-3">portfolio</label>
+                <input type="radio" id="radio-4" name="tabs" />
+                <label class="tab" for="radio-4">contact</label>
             </nav>
         </header>
         <main>
             <section class="home">
-                <div class="home-wrap">
-                    <div class="title">
-                        <h4>web publisher</h4>
-                        <h1>portfolio</h1>
-                    </div>
-                    <div class="key">
-                        <h3>sminun;</h3>
-                        <p>어느 곳이나 잘 스며들어 어울리는 김선아입니다.<br>부족한 점이 있다면 항상 배우려는 의지를 가지고 채워나가겠습니다</p>
-                    </div>
-                    <div lang="scroll">
-                        <div class="icon-scroll"></div>
-                    </div>               
+                <div class="title">Portfolio</div>
+                <div class="scroll">
+                    <div class="icon-scroll"></div>
                 </div>
-                <span class="title-circle"></span>
-                <span class="title-circle2"></span>
-                <span class="title-circle3"></span>
-                <span class="gnb-circle2"></span>
-                <span class="gnb-circle"></span>            
             </section>
-            <section class="about">
-                <div class="about-wrap">
-                    <div class="profile">
-                        <img src="./image/s_image/미모티콘.png" alt="프로필 미모티콘">
-                        <div>
-                            <h3>Kim Sun A</h3>
-                            <p>
-                               <div>1999.01.04</div>
-                               <div>010 2652 3106</div>
-                               <div>tjsdk1260@gmail.com</div>
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <ul class="about-list">
-                            <li class="education">
-                                <h3>Education</h3>
-                                <div class="date">
-                                    <div>2014.03 - 2017.02</div>
-                                    <div>2017.03 - 2021.02</div>
-                                    <div>2022.03 - 2023.</div>
-                                </div>
-                                <div class="contents">
-                                    <p>영주여자고등학교 졸업</p>
-                                    <p>영남대학교 생활제품디자인학과 전공</p>
-                                    <p>sbs아카데미컴퓨터아트학원</p>
-                                </div>
-                            </li>
-                            <li class="experience">
-                                <h3>Experience</h3>
-                                <div class="date">
-                                    <div>2019.10</div>
-                                    <div>2020.11</div>
-                                    <div>2021.03 - 2021.07</div>
-                                    <div>2021.08 - 2022.05</div>
-                                </div>
-                                <div class="contents">
-                                    <p>청년 아이디어 챌린지 프로그램 예선 장려상</p>
-                                    <p>영남대학교 생활제품디자인학과 졸업전시회</p>
-                                    <p>SK스페셜티 사무보조</p>
-                                    <p>삭스어필(주) 디자이너</p>
-                                </div>
-                            </li>
-                            <li class="Certificate">
-                                <h3>Certificate</h3>
-                                <hr>
-                                <div class="date">
-                                    <div>2010.08</div>
-                                    <div>2010.12</div>
-                                    <div>2020.11</div>
-                                    <div>2022.09</div>
-                                </div>
-                                <div class="contents">
-                                    <p>ITQ 아래한글 A등급</p>
-                                    <p>ITQ 한글파워포인트 A등급</p>
-                                    <p>자동자운전면허증 2종보통</p>
-                                    <p>웹디자인기능사 필기</p>
-                                </div>
-                            </li>
-                            <li class="skills">
-                                <h3>Skills</h3>
-                                <hr>
-                                <div>
-                                    <img src="./image/logo/photoshop-mobile.svg" alt="photoshop logo image">
-                                    <img src="./image/logo/illustrator.svg" alt="logo image">
-                                    <img src="./image/logo/html.svg" alt="html logo image">
-                                    <img src="./image/logo/css.svg" alt=" csslogo image">
-                                    <img src="./image/logo/jquery.svg" alt="jquery logo image">
-                                    <img src="./image/logo/javascript.svg" alt="javascript logo image">
-                                </div>
-                            </li>
-                         </ul>
-                    </div>
-                </div>
-                <div class="profile-circle"></div>
-                <div class="list-circle"></div>
-            </section>
-            <section class="portfolio">
-                <div class="sign">
-                    <div class="sign-circle1"></div>
-                    <div class="portfolio-title">
-                        <h1>Arc'teryx</h1>
-                    </div>
-                    <div class="introduce">
-                       적응형으로 제작하였습니다.
-                    </div>
-                    <div class="number">
-                        <span>01</span>
-                        <div>portfolio</div>
-                    </div>
-                </div>
-                <article class="arcteryx">
-                   <div class="wrap">
-                    <div class="site-content">
-                        <h2>Arc'teryx</h2>
-                        <h4>리디자인</h4>
-                        <div class="mobile-image">
-                           <img src="./image/s_image/아크테릭스 아이폰.png" alt="arc'teryx_mobile">
-                        </div>
-                        <div>html css js</div>
-                        <div>참여도 100%</div>
-                        <a href="https://tjsdk1260.github.io/arcteryx/"target="_blank" id="clickBtn">사이트 바로가기</a>
-                    </div>
-                    <img src="./image/s_image/아크테릭스 전체화면 캡쳐.png" alt="arcteryx_site_image"">
-                    <img src="./image/s_image/아크테릭스 전체화면 캡쳐.png" alt="arcteryx_site_image">
-                   </div>
-                </article>
-                <div class="sign">
-                    <div class="sign-circle2"></div>
-                    <div class="portfolio-title">
-                        <h1>Nonfiction</h1>
-                    </div>
-                    <div class="introduce">
-                       사용들에게 도움을 주도록베스트 셀러 제품들을 메인 페이지에 배치해 반응형으로 제작하였습니다.
-                    </div>
-                    <div class="number">
-                        <span>02</span>
-                        <div>portfolio</div>
-                    </div>
-                </div>
-                <article class="nonfiction">
-                    <div class="wrap">
-                       <img src="./image/s_image/논픽션 전체화면 캡쳐.png" alt="nonfiction-site-image" class="site-image1">
-                       <img src="./image/s_image/논픽션 모바일 전체화면 캡쳐.png" alt="nonfiction-mobile-site-image" class="site-image2">
-                        <div class="site-content">
-                            <h2>Nonfiction</h2>
-                            <h4>리디자인</h4>
-                            <div class="site-circle2"></div>
-                            <div class="pcMobile-image">
-                                <img src="./image/s_image/논픽션 아이맥&아이폰.png">
-                            </div>    
-                            <div>사용프로그램</div>
-                            <div>참여도 100%</div>
-                            <div class="storyboard-wrap">
-                                <label for="modal" class="button">스토리보드</label>
-                            </div>
-                            <input type="checkbox" id="modal" class="hidden">
-                            <div class="box-modal">
-                                <label for="modal" class="closer">X</label>
-                                <div class="storyboard">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <a href="https://tjsdk1260.github.io/Nonfiction/" target="_blank" id="clickBtn">사이트 바로가기</a> 
-                        </div>
-                    </div>
-                </article>
-                <div class="sign">
-                    <div class="sign-circle3"></div>
-                    <div class="portfolio-title">
-                        <h1>국립재난안전연구원</h1>
-                    </div>
-                    <div class="introduce">
-                        기존 노후된 사이트를 반응형으로 제작하였습니다.
-                    </div>
-                    <div class="number">
-                        <span>03</span>
-                        <div>portfolio</div>
-                    </div>
-                </div>
-                <article class="national">
-                    <div class="wrap">
-                        <img src="./image/s_image/국립재난안전연구원 전체화면 캡쳐.png" alt="국립재난안전연구원_사이트_이미지" class="pc-image">
-                        <img src="./image/s_image/국립재난안전연구원 모바일 전체화면 캡처.png" alt="국립재난안전연구원_모바일사이트_이미지" class="mb-image">
-                        <div class="site-content">
-                            <h2>국립재난안전연구원</h2>
-                            <h4>리디자인</h4>
-                            <div class="site-circle3"></div>
-                            <div class="pcMobile-image">
-                                <img src="./image/s_image/국립재난안전연구원 아이맥&아이폰.png" alt="국립재난안전연구원_pc&mobile" style="width: 700px;">
-                            </div>    
-                            <div>사용프로그램</div>
-                            <div>참여도 100%</div>
-                            <div class="storyboard-wrap">
-                                <label for="modal" class="button">스토리보드</label>
-                            </div>
-                            <input type="checkbox" id="modal" class="hidden">
-                            <div class="box-modal">
-                                <label for="modal" class="closer">X</label>
-                                <div class="storyboard">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <a href=" https://tjsdk1260.github.io/National-Disaster-and-Safety-Research-Institute/" target="_blank"  id="clickBtn">사이트 바로가기</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <section class="contact">
-                깃허브 인스타그램 전화번호
-                본 사이트는 포트폴리오용으로 제작되었습니다
-                &copy;2023Kim Sun-A. All Rights Reserved
-            </section>
+            <section class="about"></section>
+            <section class="portfolio"></section>
         </main>
-        <footer></footer>
+        <footer class="contact"></footer>
     </div>
     <script src="index.js"></script>
 </body>
