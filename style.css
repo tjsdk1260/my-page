@@ -165,11 +165,29 @@ input[type=radio]:checked + label {
 }
 .section-title{
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 30px;
+  left: 30px;
   font-size: 60px;
   font-family: 'NY';
   z-index: 10;}
+.color{
+  position: absolute;
+  top: 120px;
+  left: 30px;
+}
+.color>div{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid red;
+  margin-right: 10px;}
+.color-1>div:first-child{
+  background-color: #fff;
+}
+.color-1>div:nth-child(2){
+  background-color: #000;
+}
 .about-circle{
   width: 450px;
   height: 450px;
@@ -234,6 +252,7 @@ input[type=radio]:checked + label {
   width: 1090px;
   height: 1px;
   background-color: var(--color-gray);
+  z-index: -2;
   position: absolute;
   top: 26px;
   right: 34px;
@@ -321,6 +340,7 @@ article{
   visibility: visible;
   transform: scale(1,1);
   }
+
 .portfolio-content{
   width: 40%;
   position: absolute;
