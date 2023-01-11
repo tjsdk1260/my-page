@@ -172,7 +172,7 @@ input[type=radio]:checked + label {
   z-index: 10;}
 .color{
   position: absolute;
-  top: 120px;
+  top: 140px;
   left: 30px;
 }
 .color>div{
@@ -204,6 +204,7 @@ input[type=radio]:checked + label {
   position: absolute;
   top: 230px;
   left: 70px;
+  z-index: 10;
 }
 .profile>img{
   width: 200px;
@@ -246,17 +247,7 @@ input[type=radio]:checked + label {
   top: 300px;
   left: 335px;
 }
-.about-list::before{
-  content: "";
-  display: block;
-  width: 1090px;
-  height: 1px;
-  background-color: var(--color-gray);
-  z-index: -2;
-  position: absolute;
-  top: 26px;
-  right: 34px;
-}
+
 .about-list>li{
   float: left;
   margin-right: 45px;
@@ -269,7 +260,7 @@ input[type=radio]:checked + label {
 }
 .about-list>li>h3::before{
   content: "";
-  width: 105px;
+  width: 107px;
   height: 18px;
   display: block;
   background-color: var(--color-peach);
@@ -308,24 +299,23 @@ article{
   vertical-align: middle;
   cursor: pointer;
   }
-  .box-modal{
+.box-modal{
   position: fixed;
   z-index: 50;
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   margin-top: -250px;
   margin-left: -250px;
   top: 50%;
   left: 50%;
   overflow-y: scroll;
   border: 1px solid #386980;
-  visibility: collapse;
+  display: none;
   transition: all .2s ease;
   opacity: .5;}
-  .box-modal:hover{
-  opacity: 1;
-  }
-  .closer{
+.box-modal:hover{opacity: 1;}
+.storyboard>img{width: 100%;}
+.closer{
   position: absolute;
   width: 30px;
   height: 30px;
@@ -337,10 +327,9 @@ article{
   cursor: pointer;
   }
   input#modal[type=checkbox]:checked ~ .box-modal{
-  visibility: visible;
+  display: block;
   transform: scale(1,1);
   }
-
 .portfolio-content{
   width: 40%;
   position: absolute;
@@ -355,16 +344,37 @@ article{
   border-radius: 50%;
   color: #000;
 }
+.tool{
+  margin-top: 15px;
+}
 .introduce{
   margin-top: 35px;
 }
 .mockup{
-  width: 800px;
-  height: 600px;
+  width: 50%;
+  height: 555px;
   border: 1px solid red;
   position: absolute;
   right: 40px;
   bottom: 20px;
+}
+.arcteryx>.mockup>img{
+  width: 100%;}
+.nonfiction>.mockup>img{
+  width: 100%;
+}
+.version{
+  display: flex;
+  justify-content: center;
+}
+.version>div{
+  padding: 5px 15px;
+  border: 1px solid var(--color-gray);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.version>div:first-child{
+  margin-right:10px;
 }
 .contact{
   width: 100%;
